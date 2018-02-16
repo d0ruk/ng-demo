@@ -6,8 +6,9 @@
   "scripts": {
     "start": "run-s build serve",
     "dev": "webpack-dev-server --progress",
-    "build": "webpack --progress --env.prod",
-    "serve": "serve build"
+    "build": "webpack --progress --env.prod --env.aot",
+    "serve": "serve build",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "author": "Doruk Kutlu",
   "repository": {
